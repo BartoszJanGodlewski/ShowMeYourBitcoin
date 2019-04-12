@@ -1,0 +1,19 @@
+$color-list: (
+  yellow: yellow,
+  green: green,
+  red: red
+);
+
+@each $name, $value in $color-list {
+  .color-#{$name} {
+    color: $value !important;
+  }
+
+  .bg-color-#{$name} {
+    background-color: $value !important;
+  }
+
+  .border-color-#{$name} {
+    border-color: $value !important;
+  }
+}

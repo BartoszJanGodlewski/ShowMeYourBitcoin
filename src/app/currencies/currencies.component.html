@@ -1,0 +1,10 @@
+<article *ngFor="let coinBid of coinBidArray">
+  <btc-currency-pln [currencyName]="coinBid.name">
+    <span [ngClass]="{'color-yellow': coinBid.name === coinTypes.BTC}">
+      {{coinBid.valuePln | number:'1.2-2'}}
+    </span>
+  </btc-currency-pln>
+  <btc-currency-usd [currencyName]="coinBid.name"
+                    [valuePln]="coinBid.valuePln">
+  </btc-currency-usd>
+</article>

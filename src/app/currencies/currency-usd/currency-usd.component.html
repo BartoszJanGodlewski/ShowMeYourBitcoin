@@ -1,0 +1,6 @@
+<div class="bg-color-green">
+  {{currencyName}}/USD
+  <span [ngClass]="{'color-yellow': currencyName === coinTypes.BTC}">
+    {{valueUsd | number:'1.1-1'}}
+  </span>
+</div>
