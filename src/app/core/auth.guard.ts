@@ -13,7 +13,7 @@ export class AuthGuard implements CanLoad {
 
   canLoad(): boolean {
     const currentUser = this.loginService.getUserEntryFromSessionStorage();
-    console.log(currentUser);
+
     if (!currentUser) {
       this.router.navigate(['/login']);
 

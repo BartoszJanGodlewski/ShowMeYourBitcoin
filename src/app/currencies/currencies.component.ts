@@ -7,7 +7,6 @@ import { CoinTypes } from '@core/enums/coin-types';
 @Component({
   selector: 'btc-currencies',
   templateUrl: './currencies.component.html',
-  styleUrls: ['./currencies.component.scss']
 })
 export class CurrenciesComponent implements OnInit {
   coinBidArray: CoinBid[] = [];
